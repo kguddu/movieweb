@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav input{
+  width: 30rem;
+  padding: 10px 15px;
+  font-size: 1.8rem;
+  outline: none;
+  border-radius: 25px;
+  margin-right: 1rem;
+  background-color: rgb(134, 135, 135);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a{
+  text-align: center;
+  text-decoration: none;
 }
+h2{
+  font-size: medium;
+  color: rgb(186, 182, 182);
+}
+
+img{
+  min-width: 10rem;
+  max-width: 30rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  
+}
+.container{
+  max-width: 140rem;
+  margin: auto;
+  padding: 3rem;
+}
+
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+.grid-4-col{
+  grid-template-columns: repeat(4,1fr);
+}
+.card{
+  width: 25rem;
+  max-width: 30rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error{
+  color: red;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.details_section{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-top: 2rem;
+  
+}
+.left{
+  margin-left: 2rem;
+}
+.right{
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.right span{
+  font-size: larger;
+}
+
+.loading{
+  font-size: 3rem;
+  color:rgba(186, 182, 182); 
+  text-align: center;
+  margin-top: 40%;
+  
+
+}
+.button{
+  margin-top: 25rem;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(186, 182, 182); 
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+
+a:hover img{
+  transform: scale(1.1);
+}
+
+
+
